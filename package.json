@@ -1,0 +1,53 @@
+{
+  "name": "ninsho-plugin-standard-2fa-api",
+  "version": "0.0.1",
+  "description": "A plugin aggregating basic APIs equipped with 2FA (Two-Factor Authentication) used on ninsho.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "scripts": {
+    "lint": "eslint \"src/**/*.ts\" \"src/*.ts\"",
+    "prebuild": "rimraf dist",
+    "test": "jest --config ./jest.config.json --runInBand --coverage",
+    "build-t": "tsc",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build": "npm run build:cjs && npm run build:esm"
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "dist"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ninsho/ninsho-plugin-standard-2fa-api/issues"
+  },
+  "homepage": "https://github.com/ninsho/ninsho-plugin-standard-2fa-api/",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "ninsho-base": "^0.0.2",
+    "ninsho-utils": "^0.0.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jest": "^29.4.0",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/pg": "^8.6.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.9",
+    "eslint": "^7.8.1",
+    "dotenv": "^16.0.3",
+    "jest": "^29.5.0",
+    "ninsho-module-mailer": "^0.0.3",
+    "ninsho-module-pg": "^0.0.6",
+    "ninsho-module-secure": "^0.0.11",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^29.0.5",
+    "ts-loader": "^9.4.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  },
+  "sideEffects": false
+}
