@@ -1,6 +1,6 @@
 {
   "name": "ninsho-plugin-standard-2fa-api",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A plugin aggregating basic APIs equipped with 2FA (Two-Factor Authentication) used on ninsho.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -28,7 +28,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.0",
-    "ninsho-base": "^0.0.8",
+    "ninsho-base": "^0.0.9",
     "ninsho-utils": "^0.0.7"
   },
   "devDependencies": {
